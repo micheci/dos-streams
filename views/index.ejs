@@ -18,9 +18,40 @@
             <a class="navbar-brand" href="#">Navbar</a>
             <div class="loginSignup">
                 <a href="/login"><button class="btn btn-outline-success"  type="button">Log in</button></a>
-                <a href="/signup"><button class="btn btn-outline-success"  type="button">Log in</button></a>
+                <a href="/signup"><button class="btn btn-outline-success"  type="button">Sign up</button></a>
+
             </div>
           </nav>
+          <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+          <div id="<player div ID>"></div>
+          <script type="text/javascript">
+            var options = {
+              width: '630rem',
+              height: '450rem',
+              channel: "ibai",
+              video: "<video ID>",
+              collection: "<collection ID>",
+              // only needed if your site is also embedded on embed.example.com and othersite.example.com
+              parent: ["embed.example.com", "othersite.example.com"]
+            };
+            var player = new Twitch.Player("<player div ID>", options);
+            player.setVolume(0.5);
+        </script>
+           <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+           <div id="<player div ID>"></div>
+           <script type="text/javascript">
+             var options = {
+               width: '630rem',
+               height: '450rem',
+               channel: "lcs",
+               video: "<video ID>",
+               collection: "<collection ID>",
+               // only needed if your site is also embedded on embed.example.com and othersite.example.com
+               parent: ["embed.example.com", "othersite.example.com"]
+             };
+             var player = new Twitch.Player("<player div ID>", options);
+             player.setVolume(0.5);
+         </script>
       </div>
 </body>
 </html>
