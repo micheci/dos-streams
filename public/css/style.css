@@ -1,3 +1,9 @@
+
 .header{
     color:white;
+}
+.videoContainer{
+    display: flex;
+    justify-content: flex-end;
+   
 }

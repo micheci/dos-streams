@@ -11,6 +11,7 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css" /> 
 </head>
 <body>
     <div class="container-md">
@@ -22,36 +23,44 @@
 
             </div>
           </nav>
-          <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
-          <div id="<player div ID>"></div>
-          <script type="text/javascript">
-            var options = {
-              width: '630rem',
-              height: '450rem',
-              channel: "ibai",
-              video: "<video ID>",
-              collection: "<collection ID>",
-              // only needed if your site is also embedded on embed.example.com and othersite.example.com
-              parent: ["embed.example.com", "othersite.example.com"]
-            };
-            var player = new Twitch.Player("<player div ID>", options);
-            player.setVolume(0.5);
-        </script>
-           <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
-           <div id="<player div ID>"></div>
-           <script type="text/javascript">
-             var options = {
-               width: '630rem',
-               height: '450rem',
-               channel: "lcs",
-               video: "<video ID>",
-               collection: "<collection ID>",
-               // only needed if your site is also embedded on embed.example.com and othersite.example.com
-               parent: ["embed.example.com", "othersite.example.com"]
-             };
-             var player = new Twitch.Player("<player div ID>", options);
-             player.setVolume(0.5);
-         </script>
+          <!-- Streams -->
+          <div class=" mt-3 ">
+            <div class="d-flex justify-content-center">
+            <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+            <div id="<player div ID>"></div>
+            <script type="text/javascript">
+                var options = {
+                width: '630rem',
+                height: '450rem',
+                channel: "ibai",
+                video: "<video ID>",
+                collection: "<collection ID>",
+                // only needed if your site is also embedded on embed.example.com and othersite.example.com
+                parent: ["embed.example.com", "othersite.example.com"]
+                };
+                var player = new Twitch.Player("<player div ID>", options);
+                player.setVolume(0.5);
+            </script>
+          </div>
+          <div class="">
+            <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+            <div id="<player div ID>"></div>
+            <script type="text/javascript">
+                var options = {
+                width: '630rem',
+                height: '450rem',
+                channel: "lcs",
+                video: "<video ID>",
+                collection: "<collection ID>",
+                // only needed if your site is also embedded on embed.example.com and othersite.example.com
+                parent: ["embed.example.com", "othersite.example.com"]
+                };
+                var player = new Twitch.Player("<player div ID>", options);
+                player.setVolume(0.5);
+            </script></div>
+         </div>
+         <!-- Footer -->
+        
       </div>
 </body>
 </html>
