@@ -9,10 +9,10 @@ module.exports = {
       //Since we have a session each request (req) contains the logged-in users info: req.user
       //console.log(req.user) to see everything
       //Grabbing just the posts of the logged-in user
-      const posts = await Post.find({ user: req.user.id });
+      // const user = await User.find({ user: req.user.id });
       const comments=await Comment.find().sort({createdAt:"desc"}).lean();
       //Sending post data from mongodb and user data to ejs template
-      res.render("profile.ejs", { posts: posts, user: req.user,comments:comments });
+      res.render("profile.ejs", {  user: req.user});
     } catch (err) {
       console.log(err);
     }
